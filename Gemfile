@@ -56,7 +56,7 @@ group :production do
    gem 'puma'
    gem 'mysql2'
 
-   # gem 'pg'
+   gem 'pg'
 
 
 

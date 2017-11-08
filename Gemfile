@@ -19,11 +19,11 @@ gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 #gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'sdoc', '~> 0.4.2'
 #gem 'spring',        group: :development
-<<<<<<< HEAD
+
 # gem 'spring', '~> 2.0', '>= 2.0.2'
-=======
+
 gem 'spring', '~> 2.0', '>= 2.0.2'
->>>>>>> 34c0a2ccb42bba2321b1c66d9bcac5994862383b
+
 #gem 'simple_form', '~> 3.4'
 gem 'simple_form', '~> 3.5'
 #gem 'haml', '~> 4.0', '>= 4.0.7'
@@ -55,10 +55,10 @@ end
 group :production do
    gem 'puma'
    gem 'mysql2'
-<<<<<<< HEAD
-   #gem 'pg'
-=======
 
->>>>>>> 34c0a2ccb42bba2321b1c66d9bcac5994862383b
+   # gem 'pg'
+
+
+
    gem 'rails_12factor', '0.0.2'
 end

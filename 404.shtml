@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 <!-- SHTML Wrapper - 404 Not Found -->
 <!--#exec cgi="/cgi-sys/fourohfour.cgi" -->
+=======
+<!-- SHTML Wrapper - 404 Not Found -->
+<!--#exec cgi="/cgi-sys/fourohfour.cgi" -->
+>>>>>>> 34c0a2ccb42bba2321b1c66d9bcac5994862383b

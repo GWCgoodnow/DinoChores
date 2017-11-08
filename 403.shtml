@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html><head><title>403 Permission Denied</title></head>
 <body bgcolor=white>
 <h1>403 Permission Denied</h1>
@@ -5,3 +6,12 @@
 You do not have permission for this request <!--#echo var="REQUEST_URI" -->
 
 </body></html>
+=======
+<html><head><title>403 Permission Denied</title></head>
+<body bgcolor=white>
+<h1>403 Permission Denied</h1>
+
+You do not have permission for this request <!--#echo var="REQUEST_URI" -->
+
+</body></html>
+>>>>>>> 34c0a2ccb42bba2321b1c66d9bcac5994862383b

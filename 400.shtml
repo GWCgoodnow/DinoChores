@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html><head><title>400 Bad Request</title></head>
 <body bgcolor=white>
 <h1>400 Bad Request</h1>
@@ -5,3 +6,12 @@
 Invalid request.
 
 </body></html>
+=======
+<html><head><title>400 Bad Request</title></head>
+<body bgcolor=white>
+<h1>400 Bad Request</h1>
+
+Invalid request.
+
+</body></html>
+>>>>>>> 34c0a2ccb42bba2321b1c66d9bcac5994862383b

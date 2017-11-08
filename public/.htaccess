@@ -1,0 +1,12 @@
+<IfModule mod_passenger.c>
+RewriteEngine off
+Options -MultiViews
+PassengerResolveSymlinksInDocumentRoot on
+#Set this to whatever environment you'll be running in
+RailsEnv production
+RackBaseURI /dinochores
+
+# PassengerDefaultRuby /home2/pixelqua/ruby/bin/ruby
+
+SetEnv GEM_HOME /home2/pixelqua/ruby-2.3.3/gems
+</IfModule>

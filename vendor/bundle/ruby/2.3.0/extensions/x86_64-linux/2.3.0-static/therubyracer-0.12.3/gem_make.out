@@ -1,0 +1,43 @@
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+/home2/pixelqua/ruby/bin/ruby -r ./siteconf20171107-79-11lakm0.rb extconf.rb
+checking for main() in -lpthread... yes
+creating Makefile
+
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" clean
+
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR="
+compiling script.cc
+compiling rr.cc
+compiling constants.cc
+compiling function.cc
+compiling message.cc
+compiling object.cc
+compiling constraints.cc
+compiling stack.cc
+compiling context.cc
+compiling handles.cc
+compiling signature.cc
+compiling exception.cc
+compiling string.cc
+compiling accessor.cc
+compiling primitive.cc
+compiling backref.cc
+compiling gc.cc
+compiling heap.cc
+compiling external.cc
+compiling array.cc
+compiling invocation.cc
+compiling v8.cc
+compiling date.cc
+compiling template.cc
+compiling value.cc
+compiling locker.cc
+compiling init.cc
+compiling trycatch.cc
+linking shared-object v8/init.so
+
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/therubyracer-0.12.3/ext/v8
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 init.so ./.gem.20171107-79-1texlav/v8

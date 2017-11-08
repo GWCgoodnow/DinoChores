@@ -1,0 +1,34 @@
+<IfModule mod_passenger.c>
+<VirtualHost *:3000>
+  PassengerRuby /home2/pixelqua/ruby/bin/ruby
+
+  ServerName www.pixelquarium.com
+    DocumentRoot /rails_apps/dinochores/public
+
+    # If you have a web app deployed in a sub-URI, customize
+    # PassengerRuby/PassengerPython inside a <Location> block.
+    # The web app under www.bar.com/blog will use JRuby 1.7.1
+    Alias /dinochores /rail_apps/dinochores/public
+    <Location /dinochores>
+        PassengerBaseURI /dinochores
+        PassengerAppRoot /rails_apps/dinochores
+
+        PassengerRuby /home2/pixelqua/ruby/bin/ruby
+
+    </Location>
+    <Directory /rails_apps/dinochores/public>
+        Allow from all
+        Options -MultiViews
+        # Uncomment this if you're on Apache >= 2.4:
+        #Require all granted
+    </Directory>
+</VirtualHost>
+Options -MultiViews
+PassengerResolveSymlinksInDocumentRoot on
+#Set this to whatever environment you'll be running in
+RailsEnv production
+RackBaseURI /dinochores
+
+PassengerRuby /home2/pixelqua/ruby/bin/ruby
+SetEnv GEM_HOME /home2/pixelqua/ruby-2.3.3/gems/
+</IfModule>

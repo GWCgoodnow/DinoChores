@@ -1,0 +1,189 @@
+[ 2017-11-06 11:14:50.3022 194/7f16f5514720 age/Wat/WatchdogMain.cpp:1281 ]: Starting Passenger watchdog...
+[ 2017-11-06 11:14:50.3114 197/7efe46ac0720 age/Cor/CoreMain.cpp:1070 ]: Starting Passenger core...
+[ 2017-11-06 11:14:50.3114 197/7efe46ac0720 age/Cor/CoreMain.cpp:245 ]: Passenger core running in multi-application mode.
+[ 2017-11-06 11:14:50.3166 197/7efe46ac0720 age/Cor/CoreMain.cpp:820 ]: Passenger core online, PID 197
+[ 2017-11-06 11:14:50.3345 205/7f30788cf720 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2017-11-06 11:14:50.3353 205/7f30788cf720 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 205
+App 253 stdout: 
+App 253 stderr:  [passenger_native_support.so] trying to compile for the current user (pixelqua) and Ruby interpreter...
+App 253 stderr:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 253 stderr:      Warning: compilation didn't succeed. To learn why, read this file:
+App 253 stderr:      /tmp/passenger_native_support-i9pi32.log
+App 253 stderr:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 253 stderr:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 253 stderr:      # tar xzf rubyext-ruby-2.3.3-x86_64-linux.tar.gz
+App 253 stderr:      # rm -f rubyext-ruby-2.3.3-x86_64-linux.tar.gz
+App 253 stderr:      Checking whether downloaded binary is usable...
+App 253 stderr:      # /home2/pixelqua/ruby/bin/ruby -I. test.rb
+App 253 stderr:      /home2/pixelqua/ruby/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': /tmp/passenger-native-support-1t2x2ct/passenger_native_support.so: failed to map segment from shared object: Operation not permitted - /tmp/passenger-native-support-1t2x2ct/passenger_native_support.so (LoadError)
+App 253 stderr:      	from /home2/pixelqua/ruby/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 253 stderr:      	from test.rb:2:in `<main>'
+App 253 stderr:      Binary is not usable.
+App 253 stderr:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 253 stderr:   --> Passenger will still operate normally.
+[ 2017-11-06 11:14:54.6557 197/7efe45133700 age/Cor/SecurityUpdateChecker.h:358 ]: A security update is available for your version (5.1.4) of Passenger, we strongly recommend upgrading to version 5.1.11.
+[ 2017-11-06 11:14:54.6558 197/7efe45133700 age/Cor/SecurityUpdateChecker.h:363 ]:  Additional information: 
+- [Fixed in 5.1.6] [CVE-2017-7529] Specially crafted requests potentially trigger sensitive information leak via Nginx range module.
+- [Fixed in 5.1.11] [URGENT] Users with write access to an application can view arbitrary files on the system if Passenger is running as root.
+App 293 stdout: 
+
+[ 2017-11-06 11:17:14.6509 197/7efe448b1700 age/Cor/CoreMain.cpp:585 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-11-06 11:17:14.6509 197/7efe46ac0720 age/Cor/CoreMain.cpp:989 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-11-06 11:17:14.6509 197/7efe46ac0720 age/Cor/CoreMain.cpp:907 ]: Checking whether to disconnect long-running connections for process 293, application /home2/pixelqua/rails_apps/dinochores/public (development)
+[ 2017-11-06 11:17:14.6519 197/7efe36efb700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6519 197/7efe36efb700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efe3777d700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe3777d700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efe37fff700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe37fff700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efe36679700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe36679700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efe35575700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe35575700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efe448b1700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe448b1700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+
+[ 2017-11-06 11:17:14.6529 197/7efe34cf3700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe34cf3700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2017-11-06 11:17:14.6529 205/7f3076d34700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-11-06 11:17:14.6529 197/7efdf37fe700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efdf37fe700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2017-11-06 11:17:14.6529 205/7f30788cf720 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-11-06 11:17:14.6529 197/7efdf3fff700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efdf3fff700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2017-11-06 11:17:14.6529 205/7f3076533700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2017-11-06 11:17:14.6529 205/7f3076533700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efdf2ffd700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efdf2ffd700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2017-11-06 11:17:14.6529 205/7f3076d34700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2017-11-06 11:17:14.6529 197/7efe35df7700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2017-11-06 11:17:14.6529 197/7efe35df7700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2017-11-06 11:17:14.6539 197/7efe46ac0720 age/Cor/CoreMain.cpp:907 ]: Checking whether to disconnect long-running connections for process 293, application /home2/pixelqua/rails_apps/dinochores/public (development)
+[ 2017-11-06 11:17:14.6539 205/7f30788cf720 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2017-11-06 11:17:14.9761 197/7efe46ac0720 age/Cor/CoreMain.cpp:1055 ]: Passenger core shutdown finished
+[ 2017-11-06 11:17:21.4709 394/7f8cfe2f8720 age/Wat/WatchdogMain.cpp:1281 ]: Starting Passenger watchdog...
+[ 2017-11-06 11:17:21.4772 397/7f25117b1720 age/Cor/CoreMain.cpp:1070 ]: Starting Passenger core...
+[ 2017-11-06 11:17:21.4772 397/7f25117b1720 age/Cor/CoreMain.cpp:245 ]: Passenger core running in multi-application mode.
+[ 2017-11-06 11:17:21.4811 397/7f25117b1720 age/Cor/CoreMain.cpp:820 ]: Passenger core online, PID 397
+[ 2017-11-06 11:17:21.4939 405/7f62f8e9b720 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2017-11-06 11:17:21.4964 405/7f62f8e9b720 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 405
+App 452 stdout: 
+App 452 stderr:  [passenger_native_support.so] trying to compile for the current user (pixelqua) and Ruby interpreter...
+App 452 stderr:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 452 stderr:      Warning: compilation didn't succeed. To learn why, read this file:
+App 452 stderr:      /tmp/passenger_native_support-mz8839.log
+App 452 stderr:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 452 stderr:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 452 stderr:      # tar xzf rubyext-ruby-2.3.3-x86_64-linux.tar.gz
+App 452 stderr:      # rm -f rubyext-ruby-2.3.3-x86_64-linux.tar.gz
+App 452 stderr:      Checking whether downloaded binary is usable...
+App 452 stderr:      # /home2/pixelqua/ruby/bin/ruby -I. test.rb
+App 452 stderr:      /home2/pixelqua/ruby/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': /tmp/passenger-native-support-ri9t0f/passenger_native_support.so: failed to map segment from shared object: Operation not permitted - /tmp/passenger-native-support-ri9t0f/passenger_native_support.so (LoadError)
+App 452 stderr:      	from /home2/pixelqua/ruby/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 452 stderr:      	from test.rb:2:in `<main>'
+App 452 stderr:      Binary is not usable.
+App 452 stderr:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 452 stderr:   --> Passenger will still operate normally.
+[ 2017-11-06 11:17:24.3148 397/7f250fe24700 age/Cor/SecurityUpdateChecker.h:358 ]: A security update is available for your version (5.1.4) of Passenger, we strongly recommend upgrading to version 5.1.11.
+[ 2017-11-06 11:17:24.3148 397/7f250fe24700 age/Cor/SecurityUpdateChecker.h:363 ]:  Additional information: 
+- [Fixed in 5.1.6] [CVE-2017-7529] Specially crafted requests potentially trigger sensitive information leak via Nginx range module.
+- [Fixed in 5.1.11] [URGENT] Users with write access to an application can view arbitrary files on the system if Passenger is running as root.
+App 492 stdout: 
+
+[ 2017-11-06 11:18:39.5858 397/7f250f5a2700 age/Cor/CoreMain.cpp:585 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-11-06 11:18:39.5858 397/7f25117b1720 age/Cor/CoreMain.cpp:989 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-11-06 11:18:39.5858 397/7f25117b1720 age/Cor/CoreMain.cpp:907 ]: Checking whether to disconnect long-running connections for process 492, application /home2/pixelqua/rails_apps/dinochores/public (development)
+[ 2017-11-06 11:18:39.5863 397/7f250ed20700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5863 397/7f250ed20700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2017-11-06 11:18:39.5864 397/7f250dc1c700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5864 397/7f250dc1c700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2017-11-06 11:18:39.5867 397/7f250d39a700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5867 397/7f250d39a700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2017-11-06 11:18:39.5867 397/7f250cb18700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5867 397/7f250cb18700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2017-11-06 11:18:39.5870 397/7f24cb7fe700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5870 397/7f24cb7fe700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2017-11-06 11:18:39.5870 397/7f24ca7fc700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5870 397/7f24ca7fc700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2017-11-06 11:18:39.5870 397/7f24cbfff700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5870 397/7f24cbfff700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2017-11-06 11:18:39.5870 397/7f24caffd700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5870 397/7f24caffd700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2017-11-06 11:18:39.5879 397/7f250e49e700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5879 397/7f250e49e700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2017-11-06 11:18:39.5879 397/7f250f5a2700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2017-11-06 11:18:39.5879 397/7f250f5a2700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2017-11-06 11:18:39.5879 397/7f24c9ffb700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2017-11-06 11:18:39.5879 397/7f24c9ffb700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2017-11-06 11:18:39.5879 397/7f25117b1720 age/Cor/CoreMain.cpp:907 ]: Checking whether to disconnect long-running connections for process 492, application /home2/pixelqua/rails_apps/dinochores/public (development)
+[ 2017-11-06 11:18:40.0309 397/7f25117b1720 age/Cor/CoreMain.cpp:1055 ]: Passenger core shutdown finished
+
+[ 2017-11-06 11:18:52.1397 405/7f62f7300700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-11-06 11:18:52.1397 405/7f62f8e9b720 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-11-06 11:18:52.1397 405/7f62f6aff700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2017-11-06 11:18:52.1397 405/7f62f6aff700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2017-11-06 11:18:52.1397 405/7f62f7300700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2017-11-06 11:18:52.1397 405/7f62f8e9b720 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2017-11-06 11:24:34.5281 605/7fe1bc3b3720 age/Wat/WatchdogMain.cpp:1281 ]: Starting Passenger watchdog...
+[ 2017-11-06 11:24:34.5340 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:1070 ]: Starting Passenger core...
+[ 2017-11-06 11:24:34.5341 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:245 ]: Passenger core running in multi-application mode.
+[ 2017-11-06 11:24:34.5409 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:820 ]: Passenger core online, PID 608
+[ 2017-11-06 11:24:34.5482 617/7f8b54fd3720 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2017-11-06 11:24:34.5489 617/7f8b54fd3720 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 617
+App 664 stdout: 
+App 664 stderr:  [passenger_native_support.so] trying to compile for the current user (pixelqua) and Ruby interpreter...
+App 664 stderr:      (set PASSENGER_COMPILE_NATIVE_SUPPORT_BINARY=0 to disable)
+App 664 stderr:      Warning: compilation didn't succeed. To learn why, read this file:
+App 664 stderr:      /tmp/passenger_native_support-vvr3hh.log
+App 664 stderr:  [passenger_native_support.so] finding downloads for the current Ruby interpreter...
+App 664 stderr:      (set PASSENGER_DOWNLOAD_NATIVE_SUPPORT_BINARY=0 to disable)
+App 664 stderr:      # tar xzf rubyext-ruby-2.3.3-x86_64-linux.tar.gz
+App 664 stderr:      # rm -f rubyext-ruby-2.3.3-x86_64-linux.tar.gz
+App 664 stderr:      Checking whether downloaded binary is usable...
+App 664 stderr:      # /home2/pixelqua/ruby/bin/ruby -I. test.rb
+App 664 stderr:      /home2/pixelqua/ruby/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require': /tmp/passenger-native-support-cwgxas/passenger_native_support.so: failed to map segment from shared object: Operation not permitted - /tmp/passenger-native-support-cwgxas/passenger_native_support.so (LoadError)
+App 664 stderr:      	from /home2/pixelqua/ruby/lib/ruby/site_ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+App 664 stderr:      	from test.rb:2:in `<main>'
+App 664 stderr:      Binary is not usable.
+App 664 stderr:  [passenger_native_support.so] will not be used (can't compile or download) 
+App 664 stderr:   --> Passenger will still operate normally.
+[ 2017-11-06 11:24:37.3755 608/7fdf98c1c700 age/Cor/SecurityUpdateChecker.h:358 ]: A security update is available for your version (5.1.4) of Passenger, we strongly recommend upgrading to version 5.1.11.
+[ 2017-11-06 11:24:37.3755 608/7fdf98c1c700 age/Cor/SecurityUpdateChecker.h:363 ]:  Additional information: 
+- [Fixed in 5.1.6] [CVE-2017-7529] Specially crafted requests potentially trigger sensitive information leak via Nginx range module.
+- [Fixed in 5.1.11] [URGENT] Users with write access to an application can view arbitrary files on the system if Passenger is running as root.
+App 704 stdout: 
+
+
+[ 2017-11-06 11:27:28.2149 608/7fdf93fff700 age/Cor/CoreMain.cpp:585 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-11-06 11:27:28.2149 617/7f8b53438700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-11-06 11:27:28.2149 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:989 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-11-06 11:27:28.2149 617/7f8b54fd3720 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-11-06 11:27:28.2149 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:907 ]: Checking whether to disconnect long-running connections for process 704, application /home2/pixelqua/rails_apps/dinochores/public (development)
+[ 2017-11-06 11:27:28.2149 617/7f8b53438700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2017-11-06 11:27:28.2149 617/7f8b52c37700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2017-11-06 11:27:28.2149 617/7f8b52c37700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2017-11-06 11:27:28.2149 608/7fdf90ff9700 Ser/Server.h:817 ]: [ServerThr.7] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2149 608/7fdf90ff9700 Ser/Server.h:464 ]: [ServerThr.7] Shutdown finished
+[ 2017-11-06 11:27:28.2149 608/7fdf937fe700 Ser/Server.h:817 ]: [ServerThr.2] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2149 608/7fdf937fe700 Ser/Server.h:464 ]: [ServerThr.2] Shutdown finished
+[ 2017-11-06 11:27:28.2161 608/7fdf4bfff700 Ser/Server.h:817 ]: [ServerThr.8] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2161 608/7fdf4bfff700 Ser/Server.h:464 ]: [ServerThr.8] Shutdown finished
+[ 2017-11-06 11:27:28.2161 608/7fdf92ffd700 Ser/Server.h:817 ]: [ServerThr.3] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2161 608/7fdf92ffd700 Ser/Server.h:464 ]: [ServerThr.3] Shutdown finished
+[ 2017-11-06 11:27:28.2161 608/7fdf927fc700 Ser/Server.h:817 ]: [ServerThr.4] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2161 608/7fdf927fc700 Ser/Server.h:464 ]: [ServerThr.4] Shutdown finished
+[ 2017-11-06 11:27:28.2161 608/7fdf91ffb700 Ser/Server.h:817 ]: [ServerThr.5] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2161 608/7fdf91ffb700 Ser/Server.h:464 ]: [ServerThr.5] Shutdown finished
+[ 2017-11-06 11:27:28.2169 608/7fdf917fa700 Ser/Server.h:817 ]: [ServerThr.6] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2169 608/7fdf917fa700 Ser/Server.h:464 ]: [ServerThr.6] Shutdown finished
+[ 2017-11-06 11:27:28.2169 608/7fdf4b7fe700 Ser/Server.h:817 ]: [ServerThr.9] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2169 608/7fdf4b7fe700 Ser/Server.h:464 ]: [ServerThr.9] Shutdown finished
+[ 2017-11-06 11:27:28.2169 608/7fdf93fff700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2169 608/7fdf93fff700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+[ 2017-11-06 11:27:28.2169 608/7fdf4affd700 Ser/Server.h:817 ]: [ServerThr.10] Freed 128 spare client objects
+[ 2017-11-06 11:27:28.2169 608/7fdf4affd700 Ser/Server.h:464 ]: [ServerThr.10] Shutdown finished
+[ 2017-11-06 11:27:28.2169 608/7fdf4a7fc700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2017-11-06 11:27:28.2169 608/7fdf4a7fc700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2017-11-06 11:27:28.2177 617/7f8b54fd3720 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2017-11-06 11:27:28.2179 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:907 ]: Checking whether to disconnect long-running connections for process 704, application /home2/pixelqua/rails_apps/dinochores/public (development)
+[ 2017-11-06 11:27:28.6519 608/7fdf9a5a9720 age/Cor/CoreMain.cpp:1055 ]: Passenger core shutdown finished

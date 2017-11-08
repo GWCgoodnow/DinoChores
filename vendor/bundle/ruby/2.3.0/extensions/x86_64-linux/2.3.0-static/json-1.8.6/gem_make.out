@@ -1,0 +1,13 @@
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/home2/pixelqua/ruby/bin/ruby -r ./siteconf20171107-79-5l1uem.rb extconf.rb
+creating Makefile
+
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /home2/pixelqua/rails_apps/dinochores/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
